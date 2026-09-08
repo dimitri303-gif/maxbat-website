@@ -55,14 +55,20 @@ function doPost(e) {
     const company = data.company || "Не вказано";
     const timestamp = Utilities.formatDate(new Date(), "Europe/Kyiv", "dd.MM.yyyy HH:mm:ss");
 
-    // 1. Запис у Google Таблицю
-    sheet.appendRow([timestamp, name, phone, company, "Новий лід"]);
+    // Очищений телефон для Telegram (без лапки)
+    const cleanPhone = phone.replace(/^'/, '');
+    // Безпечний телефон для Таблиці (з лапкою, щоб не було #ERROR!)
+    const safePhone = phone.startsWith("'") ? phone : "'" + phone;
+
+    // 1. Вставка нового ліда ЗВЕРХУ (відразу під заголовками, рядок 2)
+    sheet.insertRowAfter(1);
+    sheet.getRange(2, 1, 1, 5).setValues([[timestamp, name, safePhone, company, "Новий лід"]]);
 
     // 2. Відправка сповіщення в Telegram
     if (TELEGRAM_BOT_TOKEN && TELEGRAM_BOT_TOKEN !== "ВАШ_ТОКЕН_ВІД_BOTFATHER") {
       const message = "🔥 *НОВА ЗАЯВКА НА ПАРТНЕРСТВО MAXBAT!*\n\n" +
                       "👤 *Ім'я:* " + name + "\n" +
-                      "📞 *Телефон:* `" + phone + "`\n" +
+                      "📞 *Телефон:* `" + cleanPhone + "`\n" +
                       "🏢 *Сервісний центр / Місто:* " + company + "\n" +
                       "🕒 *Час:* " + timestamp;
 

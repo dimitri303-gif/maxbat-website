@@ -759,7 +759,7 @@
   });
 
   // Lead Form submission handler (Telegram + Google Sheets)
-  const GOOGLE_SCRIPT_URL = ''; // <-- Вставте сюди URL Google Apps Script Web App
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxYqv-T2mIyNSNwaFs_kMI-RPpmNlWmqhWtISzOm0uiLEPxARRblpFpwRbAR5nqjBTkpQ/exec';
 
   const partnerForm = document.getElementById('partner-form');
   if (partnerForm) {
@@ -769,9 +769,13 @@
       const origText = submitBtn ? submitBtn.innerHTML : 'СТАТИ ПАРТНЕРОМ ↗';
       
       const formData = new FormData(partnerForm);
+      let phoneVal = formData.get('phone') || '';
+      if (phoneVal && !phoneVal.startsWith("'")) {
+        phoneVal = "'" + phoneVal;
+      }
       const data = {
         name: formData.get('name') || '',
-        phone: formData.get('phone') || '',
+        phone: phoneVal,
         company: formData.get('company') || '',
         timestamp: new Date().toLocaleString('uk-UA')
       };
