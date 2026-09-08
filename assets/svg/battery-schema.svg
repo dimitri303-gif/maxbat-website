@@ -1,0 +1,16 @@
+<svg aria-label="Акумулятор MaxBat" role="img" viewbox="0 0 240 470">
+<rect fill="#1A1C12" height="454" rx="20" width="212" x="4" y="8"></rect>
+<rect fill="none" height="434" rx="13" stroke="#3A3D2E" stroke-width="1.2" width="192" x="14" y="18"></rect>
+<text fill="#F2EFE6" font-family="'Comfortaa',cursive" font-size="24" font-weight="700" letter-spacing="2" x="32" y="70">MAX</text>
+<g color="#A2C51D" transform="translate(96,48) scale(0.21)"><use height="133" href="#bolt" width="70"></use></g>
+<text fill="#F2EFE6" font-family="'Comfortaa',cursive" font-size="24" font-weight="700" letter-spacing="2" x="120" y="70">BAT</text>
+<rect fill="#4A4D3C" height="7" rx="3.5" width="130" x="32" y="120"></rect>
+<rect fill="#4A4D3C" height="7" rx="3.5" width="104" x="32" y="140"></rect>
+<rect fill="#4A4D3C" height="7" rx="3.5" width="118" x="32" y="160"></rect>
+<text fill="#B9B6A8" font-family="'Roboto Mono',monospace" font-size="28" x="32" y="238">2815 mAh</text>
+<text fill="#7A776C" font-family="'Roboto Mono',monospace" font-size="16" x="32" y="268">3.83 V · Li-Ion</text>
+<rect fill="none" height="42" rx="6" stroke="#A2C51D" stroke-width="2" width="62" x="32" y="326"></rect>
+<text fill="#A2C51D" font-family="'Roboto Mono',monospace" font-size="19" x="52" y="354">IC</text>
+<rect fill="#1A1C12" height="26" rx="5" width="24" x="0" y="408"></rect>
+<g stroke="#9B988C" stroke-width="1"><line x1="232" x2="232" y1="8" y2="462"></line><line x1="225" x2="239" y1="8" y2="8"></line><line x1="225" x2="239" y1="462" y2="462"></line></g>
+</svg>

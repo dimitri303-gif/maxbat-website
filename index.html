@@ -1,0 +1,819 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="uk" style=""><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MaxBat — Офіційний сайт | Надійні акумулятори для смартфонів</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <meta name="description" content="MaxBat — преміальна серія акумуляторів для смартфонів iPhone, Samsung, Xiaomi та інших брендів. Дворівневий контроль якості, гарантія 18 місяців.">
+
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#e5e3d6",
+            "on-tertiary-container": "#7c1a6d",
+            "surface-container-lowest": "#0e0f08",
+            "tertiary-fixed": "#ffd7f0",
+            "tertiary": "#ffbcea",
+            "surface-tint": "#9cd850",
+            "graphite-surface": "#26261E",
+            "cadmium-border": "#3B3D30",
+            "surface-dim": "#14140c",
+            "tertiary-container": "#ff8de4",
+            "tertiary-fixed-dim": "#fface8",
+            "surface-bright": "#3a3a30",
+            "overload-crimson": "#EF4444",
+            "primary-fixed-dim": "#9cd850",
+            "surface-container-highest": "#35352c",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "on-background": "#e5e3d6",
+            "on-primary-fixed-variant": "#304f00",
+            "secondary-fixed-dim": "#c2c9b5",
+            "secondary-fixed": "#dee5d1",
+            "on-secondary-fixed-variant": "#42493a",
+            "secondary-container": "#444b3c",
+            "on-surface-variant": "#c2c9b3",
+            "on-secondary-fixed": "#171e11",
+            "background": "#14140c",
+            "inverse-on-surface": "#313128",
+            "inverse-surface": "#e5e3d6",
+            "pure-white": "#FFFFFF",
+            "on-tertiary-fixed": "#3a0032",
+            "outline-variant": "#424938",
+            "inverse-primary": "#416900",
+            "on-secondary": "#2c3325",
+            "on-primary-container": "#2f4e00",
+            "surface-container-high": "#2b2a22",
+            "primary-fixed": "#b7f569",
+            "on-tertiary": "#5e0053",
+            "outline": "#8c937f",
+            "terminal-black": "#12120D",
+            "chassis-dark": "#1D1D15",
+            "on-primary-fixed": "#102000",
+            "on-secondary-container": "#b3bba8",
+            "on-primary": "#1f3700",
+            "surface-container": "#202018",
+            "primary": "#a5e258",
+            "voltage-lime": "#8BC53F",
+            "on-tertiary-fixed-variant": "#7d1b6e",
+            "surface": "#14140c",
+            "secondary": "#c2c9b5",
+            "electric-amber": "#F59E0B",
+            "primary-container": "#8bc53f",
+            "on-error": "#690005",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#1c1c14",
+            "surface-variant": "#35352c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-2xs": "0.25rem",
+            "space-xs": "0.5rem",
+            "space-sm": "0.75rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-3xl": "4.5rem",
+            "gutter-mobile": "1rem",
+            "gutter-desktop": "1.5rem",
+            "container-max": "1440px"
+          },
+          "fontFamily": {
+            "label-lg": ["JetBrains Mono"],
+            "label-md": ["JetBrains Mono"],
+            "label-sm": ["JetBrains Mono"],
+            "display-lg": ["Montserrat"],
+            "display-lg-mobile": ["Montserrat"],
+            "headline-lg": ["Montserrat"],
+            "headline-lg-mobile": ["Montserrat"],
+            "headline-md": ["Montserrat"],
+            "headline-sm": ["Montserrat"],
+            "body-lg": ["Montserrat"],
+            "body-md": ["Montserrat"],
+            "body-sm": ["Montserrat"]
+          },
+          "fontSize": {
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .technical-grid-bg {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(59, 61, 48, 0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(59, 61, 48, 0.15) 1px, transparent 1px);
+    }
+    .subtle-glow {
+      box-shadow: 0 0 35px -5px rgba(139, 197, 63, 0.18);
+    }
+    .neon-arc-pulse {
+      filter: drop-shadow(0 0 16px rgba(139, 197, 63, 0.45));
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-voltage-lime selection:text-terminal-black">
+<canvas id="particle-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+<!-- TopNavBar (Shared Component from JSON) -->
+<div class="flex justify-between items-center w-full px-6 md:px-gutter-desktop max-w-container-max mx-auto h-20">
+<!-- Brand & Beta Badge -->
+<div class="flex items-center gap-3">
+<a class="flex items-center group" href="#">
+<div class="h-8 md:h-9 w-auto flex items-center transition-transform group-hover:scale-105 duration-200"><img src="assets/images/logo-header.png" alt="MaxBat" class="h-8 md:h-9 w-auto object-contain"></div>
+</a>
+<span class="inline-flex items-center px-2 py-0.5 rounded border border-voltage-lime/40 bg-surface-container text-voltage-lime font-label-sm text-label-sm tracking-widest">
+          BETA
+        </span>
+</div>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-voltage-lime dark:text-voltage-lime border-b-2 border-voltage-lime pb-1 font-label-md text-label-md" href="#lines">Лінійки</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors font-label-md text-label-md" href="#about">Про бренд</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors font-label-md text-label-md" href="#quality">Контроль якості</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors font-label-md text-label-md" href="#partners">Партнерам</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors font-label-md text-label-md" href="#contact-footer">Контакти</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 bg-voltage-lime hover:bg-primary text-terminal-black font-headline-sm text-label-md px-5 py-2.5 rounded transition-all duration-200 active:scale-98 shadow-[0_0_15px_rgba(139,197,63,0.3)]" href="#partner-form">
+<svg class="w-4 h-4 text-black shrink-0" viewBox="340 45 115 230" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M374.59 227.888H374.69C376.34 227.938 377.91 227.188 378.9 225.878L450.64 131.578C453.68 127.578 450.83 121.828 445.8 121.828H419.9C415.1 121.828 412.2 116.538 414.77 112.488L448.54 59.2975C451.1 55.2475 448.2 49.9575 443.41 49.9575H411.84C409.54 49.9575 407.43 51.2675 406.4 53.3175L358.59 148.958C356.57 152.988 359.51 157.747 364.03 157.747H387.43C391.78 157.747 394.72 162.188 393.04 166.198L370.02 220.798C368.63 224.118 371 227.788 374.59 227.898"></path><path d="M360.79 235.668L345.46 272.048L369.4 240.578C371.78 237.448 369.74 232.938 365.82 232.668C365.78 232.658 365.74 232.658 365.69 232.658C363.59 232.508 361.62 233.718 360.79 235.658"></path></svg>
+<span class="">Стати партнером</span>
+</a>
+</div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 rounded text-voltage-lime hover:bg-cadmium-border/40 focus:outline-none" aria-label="Меню">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        </div>
+</header>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu-drawer" class="fixed inset-x-0 top-[80px] bg-terminal-black/95 backdrop-blur-xl border-b border-cadmium-border p-6 flex flex-col gap-4 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 z-40 md:hidden">
+          <a class="text-voltage-lime font-label-md py-2 border-b border-cadmium-border/50" href="#lines" onclick="toggleMobileMenu()">Лінійки</a>
+          <a class="text-on-surface-variant hover:text-on-surface font-label-md py-2 border-b border-cadmium-border/50" href="#about" onclick="toggleMobileMenu()">Про бренд</a>
+          <a class="text-on-surface-variant hover:text-on-surface font-label-md py-2 border-b border-cadmium-border/50" href="#quality" onclick="toggleMobileMenu()">Контроль якості</a>
+          <a class="text-on-surface-variant hover:text-on-surface font-label-md py-2 border-b border-cadmium-border/50" href="#partners" onclick="toggleMobileMenu()">Партнерам</a>
+          <a class="text-on-surface-variant hover:text-on-surface font-label-md py-2 border-b border-cadmium-border/50" href="#contact-footer" onclick="toggleMobileMenu()">Контакти</a>
+          <a href="#partner-form" onclick="toggleMobileMenu()" class="mt-2 text-center bg-voltage-lime text-terminal-black font-label-md font-bold py-3 rounded uppercase tracking-wider">Стати партнером ↗</a>
+        </div>
+        
+<main class="w-full relative overflow-hidden technical-grid-bg">
+<!-- HERO SECTION -->
+<section class="relative pt-12 pb-24 md:pt-20 md:pb-32 px-6 md:px-gutter-desktop max-w-container-max mx-auto text-center flex flex-col items-center">
+<!-- Specialization Tag Pill -->
+<div class="inline-flex items-center gap-4 px-4 py-1.5 rounded-full bg-chassis-dark border border-cadmium-border shadow-sm mb-6">
+<span class="text-on-surface-variant font-label-md text-label-md flex items-center gap-1 opacity-70">
+<span class="text-overload-crimson font-bold">✕</span> Універсальність
+        </span>
+<span class="h-3 w-[1px] bg-cadmium-border"></span>
+<span class="text-voltage-lime font-label-md text-label-md flex items-center gap-1 font-semibold">
+<span class="text-voltage-lime font-bold">✓</span> Спеціалізація
+        </span>
+</div>
+<!-- Tagline Subtitle -->
+
+<!-- Neon Arc & Brand Logo Integration -->
+<div class="relative w-full max-w-3xl flex flex-col items-center justify-center my-4"><div class="relative z-10 py-4 transform transition-transform hover:scale-[1.01] duration-300"><div class="w-auto h-20 sm:h-24 md:h-32 max-w-full drop-shadow-[0_10px_30px_rgba(0,0,0,0.85)] filter flex items-center justify-center"><img src="assets/images/logo-hero.png" alt="MaxBat" class="w-auto h-24 md:h-32 mx-auto object-contain"></div></div></div>
+<!-- Description statement -->
+<div class="max-w-2xl mx-auto mt-8 z-10 space-y-3"><h1 class="font-headline-md text-headline-md text-on-surface font-semibold">АКБ, які забезпечують стабільний, якісний та передбачуваний результат.</h1><p class="font-body-lg text-body-lg text-voltage-lime font-medium">Впевненість у кожному ремонті.</p></div>
+<!-- Hero Key Metrics Bar -->
+<div class="mt-14 w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 z-10">
+<div class="bg-chassis-dark/90 backdrop-blur border border-cadmium-border p-4 rounded text-center hover:border-voltage-lime transition-all duration-200 group">
+<span class="block font-headline-md text-headline-md text-voltage-lime font-bold group-hover:scale-105 transition-transform">12</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">місяців гарантії</span>
+</div>
+<div class="bg-chassis-dark/90 backdrop-blur border border-cadmium-border p-4 rounded text-center hover:border-voltage-lime transition-all duration-200 group">
+<span class="block font-headline-md text-headline-md text-voltage-lime font-bold group-hover:scale-105 transition-transform">800+</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">циклів зарядки</span>
+</div>
+<div class="bg-chassis-dark/90 backdrop-blur border border-cadmium-border p-4 rounded text-center hover:border-voltage-lime transition-all duration-200 group">
+<span class="block font-headline-md text-headline-md text-voltage-lime font-bold group-hover:scale-105 transition-transform">80%</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">ємності після 2 років</span>
+</div>
+<div class="bg-chassis-dark/90 backdrop-blur border border-cadmium-border p-4 rounded text-center hover:border-voltage-lime transition-all duration-200 group">
+<span class="block font-headline-md text-headline-md font-bold group-hover:scale-105 transition-transform text-voltage-lime">1:1</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">габарити з оригіналом</span>
+</div>
+</div>
+</section>
+<!-- SECTION 02: PRODUCT LINES -->
+<section class="py-20 border-t border-cadmium-border bg-terminal-black/80" id="lines">
+<div class="max-w-container-max mx-auto px-6 md:px-gutter-desktop">
+<!-- Header badge & title -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-cadmium-border pb-6">
+<div>
+<span class="font-label-md text-label-md text-voltage-lime uppercase tracking-wider block mb-2">//02 лінійки</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Під кожен бренд — своя лінійка</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+            Вузька спеціалізація під контролери живлення та конструктив кожного виробника гаджетів.
+          </p>
+</div>
+<!-- 4 Product Line Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: ProLine -->
+<div class="bg-chassis-dark border border-cadmium-border rounded flex flex-col justify-between overflow-hidden hover:border-voltage-lime transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.5)] group">
+<div class="p-5 border-b border-cadmium-border/60 flex justify-between items-center bg-surface-container-low">
+<span class="font-label-md text-label-md text-voltage-lime bg-surface-container px-2.5 py-1 rounded border border-cadmium-border">Li-Ion ·<br></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ProLine</span>
+</div>
+
+<div class="p-6 flex flex-col flex-grow justify-between bg-chassis-dark">
+<div><div class="w-full flex justify-center items-center py-2 mb-4"><img src="assets/images/box-green-proline.png" alt="MaxBat ProLine Box" class="h-44 md:h-52 max-h-[220px] w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">ProLine</h3>
+<p class="font-label-sm text-label-sm text-voltage-lime uppercase mb-3">широкий асортимент смартфонів</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                  Баланс ємності, безпеки та тривалого ресурсу для щоденних сценаріїв.
+                </p>
+</div>
+<a class="inline-flex items-center justify-between w-full py-2.5 px-3 rounded bg-graphite-surface border border-cadmium-border hover:border-voltage-lime hover:text-voltage-lime text-on-surface font-label-md text-label-md transition-all duration-200" href="#partners">
+<span class="">дізнатися більше</span>
+<span class="text-voltage-lime font-bold">↗</span>
+</a>
+</div>
+</div>
+<!-- Card 2: GalaxyLine -->
+<div class="bg-chassis-dark border border-cadmium-border rounded flex flex-col justify-between overflow-hidden hover:border-voltage-lime transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.5)] group">
+<div class="p-5 border-b border-cadmium-border/60 flex justify-between items-center bg-surface-container-low">
+<span class="font-label-md text-label-md text-voltage-lime bg-surface-container px-2.5 py-1 rounded border border-cadmium-border">Samsung</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">GalaxyLine</span>
+</div>
+
+<div class="p-6 flex flex-col flex-grow justify-between bg-chassis-dark">
+<div>
+<div class="w-full flex justify-center items-center py-2 mb-4"><img src="assets/images/box-blue-galaxyline.png" alt="MaxBat GalaxyLine Box" class="h-44 md:h-52 max-h-[220px] w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">GalaxyLine</h3>
+<p class="font-label-sm text-label-sm text-voltage-lime uppercase mb-3">для всіх моделей Samsung</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                  Стабільна подача енергії, захист від перегріву, габарити 1:1 з оригіналом.
+                </p>
+</div>
+<a class="inline-flex items-center justify-between w-full py-2.5 px-3 rounded bg-graphite-surface border border-cadmium-border hover:border-voltage-lime hover:text-voltage-lime text-on-surface font-label-md text-label-md transition-all duration-200" href="#partners">
+<span class="">дізнатися більше</span>
+<span class="text-voltage-lime font-bold">↗</span>
+</a>
+</div>
+</div>
+<!-- Card 3: RedLine -->
+<div class="bg-chassis-dark border border-cadmium-border rounded flex flex-col justify-between overflow-hidden hover:border-voltage-lime transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.5)] group">
+<div class="p-5 border-b border-cadmium-border/60 flex justify-between items-center bg-surface-container-low">
+<span class="font-label-md text-label-md text-overload-crimson bg-surface-container px-2.5 py-1 rounded border border-cadmium-border">Xiaomi / Poco</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">RedLine</span>
+</div>
+
+<div class="p-6 flex flex-col flex-grow justify-between bg-chassis-dark">
+<div>
+<div class="w-full flex justify-center items-center py-2 mb-4"><img src="assets/images/box-red-redline.png" alt="MaxBat RedLine Box" class="h-44 md:h-52 max-h-[220px] w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">RedLine</h3>
+<p class="font-label-sm text-label-sm text-voltage-lime uppercase mb-3">Xiaomi, Poco, Redmi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                  Протестовано на реальних моделях. Надійна робота в іграх, навігації та стрімінгу.
+                </p>
+</div>
+<a class="inline-flex items-center justify-between w-full py-2.5 px-3 rounded bg-graphite-surface border border-cadmium-border hover:border-voltage-lime hover:text-voltage-lime text-on-surface font-label-md text-label-md transition-all duration-200" href="#partners">
+<span class="">дізнатися більше</span>
+<span class="text-voltage-lime font-bold">↗</span>
+</a>
+</div>
+</div>
+<!-- Card 4: iPower -->
+<div class="bg-chassis-dark border border-cadmium-border rounded flex flex-col justify-between overflow-hidden hover:border-voltage-lime transition-all duration-200 hover:shadow-[0_4px_20px_rgba(0,0,0,0.5)] group">
+<div class="p-5 border-b border-cadmium-border/60 flex justify-between items-center bg-surface-container-low">
+<span class="font-label-md text-label-md text-voltage-lime bg-surface-container px-2.5 py-1 rounded border border-cadmium-border">iOS Genuine IC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">iPower</span>
+</div>
+
+<div class="p-6 flex flex-col flex-grow justify-between bg-chassis-dark">
+<div>
+<div class="w-full flex justify-center items-center py-2 mb-4"><img src="assets/images/box-white-ipower.png" alt="MaxBat iPower Box" class="h-44 md:h-52 max-h-[220px] w-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">iPower</h3>
+<p class="font-label-sm text-label-sm text-voltage-lime uppercase mb-3">досконалість для Apple</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                  Smart IC, Genuine mode та High Capacity. Повна сумісність з iOS без збоїв.
+                </p>
+</div>
+<a class="inline-flex items-center justify-between w-full py-2.5 px-3 rounded bg-graphite-surface border border-cadmium-border hover:border-voltage-lime hover:text-voltage-lime text-on-surface font-label-md text-label-md transition-all duration-200" href="#partners">
+<span class="">дізнатися більше</span>
+<span class="text-voltage-lime font-bold">↗</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: BRAND & ENGINEERING ARCHITECTURE -->
+<section class="py-24 border-t border-cadmium-border" id="about">
+<div class="max-w-container-max mx-auto px-6 md:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Vision & Philosophy -->
+<div class="lg:col-span-5 space-y-6">
+<span class="font-label-md text-label-md text-voltage-lime uppercase tracking-wider block">//03 про бренд</span>
+<div class="inline-flex items-center gap-3 px-3.5 py-1 rounded bg-surface-container border border-cadmium-border">
+<span class="text-on-surface-variant font-label-sm text-label-sm line-through">Універсальність</span>
+<span class="text-cadmium-border">|</span>
+<span class="text-voltage-lime font-label-sm text-label-sm font-bold">Спеціалізація</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold leading-tight">
+              Максимально наближені до заводських характеристик кожного окремого гаджета.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Кожна лінійка MaxBat створена, щоб бути ідеально сумісною зі своїми пристроями — без компромісів універсальних АКБ. Ми індивідуально програмуємо прошивки контролерів та відбираємо преміальні кобальтові електроди.
+            </p>
+
+</div>
+<!-- Right Column: 4 Technical Modular Cards -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Tech Card 1 -->
+<div class="p-6 bg-chassis-dark border border-cadmium-border rounded hover:border-voltage-lime transition-colors group">
+<div class="w-12 h-12 rounded bg-surface-container border border-cadmium-border flex items-center justify-center text-voltage-lime mb-4 group-hover:border-voltage-lime transition-colors">
+<span class="material-symbols-outlined text-[26px]">shield</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase font-bold mb-1">корпус</h4>
+<p class="font-headline-sm text-headline-sm text-voltage-lime font-semibold mb-2">захист від деформації</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Посилена конструктивна рамка блокує розбухання батареї навіть при критичних температурних стрибках.
+              </p>
+</div>
+<!-- Tech Card 2 -->
+<div class="p-6 bg-chassis-dark border border-cadmium-border rounded hover:border-voltage-lime transition-colors group">
+<div class="w-12 h-12 rounded bg-surface-container border border-cadmium-border flex items-center justify-center text-voltage-lime mb-4 group-hover:border-voltage-lime transition-colors">
+<span class="material-symbols-outlined text-[26px]">battery_charging_full</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase font-bold mb-1">елемент li-ion</h4>
+<p class="font-headline-sm text-headline-sm text-voltage-lime font-semibold mb-2">800+ циклів зарядки</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Висока щільність накопичення енергії та збереження робочих характеристик упродовж тривалого терміну служби.
+              </p>
+</div>
+<!-- Tech Card 3 -->
+<div class="p-6 bg-chassis-dark border border-cadmium-border rounded hover:border-voltage-lime transition-colors group">
+<div class="w-12 h-12 rounded bg-surface-container border border-cadmium-border flex items-center justify-center text-voltage-lime mb-4 group-hover:border-voltage-lime transition-colors">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase font-bold mb-1">контролер заряду</h4>
+<p class="font-headline-sm text-headline-sm text-voltage-lime font-semibold mb-2">захист від перегріву та замикання</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Smart IC плата з подвійним рівнем безпеки: відсікання перенапруги, глибокого розряду та короткого замикання.
+              </p>
+</div>
+<!-- Tech Card 4 -->
+<div class="p-6 bg-chassis-dark border border-cadmium-border rounded hover:border-voltage-lime transition-colors group">
+<div class="w-12 h-12 rounded bg-surface-container border border-cadmium-border flex items-center justify-center text-voltage-lime mb-4 group-hover:border-voltage-lime transition-colors">
+<span class="material-symbols-outlined text-[26px]">cable</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase font-bold mb-1">шлейф</h4>
+<p class="font-headline-sm text-headline-sm text-voltage-lime font-semibold mb-2">сумісність 1:1 з оригіналом</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Гнучкий зносостійкий FPC-конектор із золотим напиленням контактних площадок для надійного сполучення.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: DUAL-LEVEL QUALITY CONTROL -->
+<section class="py-20 border-t border-cadmium-border bg-chassis-dark/50" id="quality">
+<div class="max-w-container-max mx-auto px-6 md:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md text-voltage-lime uppercase tracking-wider block mb-2">Quality Assurance</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Дворівневий контроль якості</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3">
+            Подвійна верифікація виключає заводський брак та гарантує бездоганну репутацію вашого сервісу.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+<!-- Quality Level 1 -->
+<div class="bg-chassis-dark border border-cadmium-border p-8 rounded relative overflow-hidden group hover:border-voltage-lime transition-colors">
+<div class="absolute -right-6 -bottom-6 font-display-lg text-8xl text-cadmium-border/30 font-bold select-none pointer-events-none">
+              01
+            </div>
+<span class="inline-block px-3 py-1 rounded bg-graphite-surface border border-cadmium-border font-label-sm text-label-sm text-voltage-lime uppercase mb-4">
+              рівень 1
+            </span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-3">
+              Завод-виробник
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Менеджери в Китаї ретельно тестують сумісність із конкретними моделями смартфонів. Вибір преміальних комірок, стрес-тест циклів заряду-розряду, перевірка калібрування датчиків температури.
+            </p>
+<div class="flex items-center gap-3 text-voltage-lime font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+<span class="">100% заводський пре-тест партій</span>
+</div>
+</div>
+<!-- Quality Level 2 -->
+<div class="bg-chassis-dark border border-cadmium-border p-8 rounded relative overflow-hidden group hover:border-voltage-lime transition-colors">
+<div class="absolute -right-6 -bottom-6 font-display-lg text-8xl text-cadmium-border/30 font-bold select-none pointer-events-none">
+              02
+            </div>
+<span class="inline-block px-3 py-1 rounded bg-graphite-surface border border-cadmium-border font-label-sm text-label-sm text-voltage-lime uppercase mb-4">
+              рівень 2
+            </span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-3">
+              T+market
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Додатковий контроль відділом якості кожного постачання для залізобетонної гарантії. Вхідний аналіз ємності, опору шлейфів та геометрії перед відправленням у сервісні центри України.
+            </p>
+<div class="flex items-center gap-3 text-voltage-lime font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="">Локальний вхідний аудит в Україні</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: PARTNERS & SERVICE CENTERS -->
+<section class="py-24 border-t border-cadmium-border" id="partners">
+<div class="max-w-container-max mx-auto px-6 md:px-gutter-desktop">
+<div class="mb-14">
+<span class="font-label-md text-label-md text-voltage-lime uppercase tracking-wider block mb-2">//04 партнерам</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+            Працюйте з АКБ, які бережуть репутацію
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">
+            MaxBat — це турбота про репутацію майстра: надійні акумулятори для щоденної роботи сервісу.
+          </p>
+</div>
+<!-- Master Advantages Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+<div class="p-5 bg-chassis-dark border border-cadmium-border rounded">
+<span class="material-symbols-outlined text-voltage-lime text-2xl mb-2">handyman</span>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold mb-1">Максимально зручно встановлювати</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Точні габарити, якісний скотч та вивірені гнучкі шлейфи без заломів.</p>
+</div>
+<div class="p-5 bg-chassis-dark border border-cadmium-border rounded">
+<span class="material-symbols-outlined text-voltage-lime text-2xl mb-2">checklist</span>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold mb-1">Легко підібрати заводську сумісність</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Коди акумуляторів повністю відповідають каталожним партномерам бренду.</p>
+</div>
+<div class="p-5 bg-chassis-dark border border-cadmium-border rounded">
+<span class="material-symbols-outlined text-voltage-lime text-2xl mb-2">recommend</span>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold mb-1">Підвищують лояльність клієнтів</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Смартфон тримає заряд як новий, мінімізуючи повторні повернення.</p>
+</div>
+<div class="p-5 bg-chassis-dark border border-cadmium-border rounded">
+<span class="material-symbols-outlined text-voltage-lime text-2xl mb-2">hourglass_top</span>
+<h4 class="font-headline-sm text-[16px] text-on-surface font-semibold mb-1">Служать користувачам якомога довше</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Мінімум деградації ємності навіть після інтенсивної щоденної експлуатації.</p>
+</div>
+</div>
+<!-- 4 Steps + Interactive Lead Form Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Steps block -->
+<div class="lg:col-span-6 space-y-6">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-6">
+              Як стати партнером
+            </h3>
+<div class="space-y-4">
+<!-- Step 01 -->
+<div class="flex items-start gap-4 p-4 rounded bg-chassis-dark border border-cadmium-border">
+<span class="font-label-lg text-label-lg text-voltage-lime font-bold">01</span>
+<div>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Заявка</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Залишаєте контакти у формі</p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="flex items-start gap-4 p-4 rounded bg-chassis-dark border border-cadmium-border">
+<span class="font-label-lg text-label-lg text-voltage-lime font-bold">02</span>
+<div>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Умови</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Менеджер надсилає прайс та умови</p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="flex items-start gap-4 p-4 rounded bg-chassis-dark border border-cadmium-border">
+<span class="font-label-lg text-label-lg text-voltage-lime font-bold">03</span>
+<div>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Тестове замовлення</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Перевіряєте якість на практиці</p>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="flex items-start gap-4 p-4 rounded bg-chassis-dark border border-cadmium-border">
+<span class="font-label-lg text-label-lg text-voltage-lime font-bold">04</span>
+<div>
+<h4 class="font-headline-sm text-[17px] text-on-surface font-bold">Співпраця</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Постійні поставки та підтримка</p>
+</div>
+</div>
+</div>
+</div>
+<!-- B2B Partner Lead Form -->
+<div class="lg:col-span-6 bg-chassis-dark border border-cadmium-border p-8 rounded-lg shadow-2xl relative" id="partner-block">
+<div class="mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Готові працювати з MaxBat?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Залиште заявку — менеджер зв'яжеться протягом робочого дня.
+              </p>
+</div>
+<form id="partner-form" class="space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Ваше ім'я</label>
+<input name="name" class="w-full bg-terminal-black border border-cadmium-border focus:border-voltage-lime focus:ring-0 text-on-surface px-4 py-3 rounded font-body-md outline-none transition-colors" placeholder="Олександр" required="" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Телефон або Telegram</label>
+<input name="phone" class="w-full bg-terminal-black border border-cadmium-border focus:border-voltage-lime focus:ring-0 text-on-surface px-4 py-3 rounded font-body-md outline-none transition-colors" placeholder="+380 (__) ___-__-__" required="" type="tel">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Назва сервісного центру / Місто</label>
+<input name="company" class="w-full bg-terminal-black border border-cadmium-border focus:border-voltage-lime focus:ring-0 text-on-surface px-4 py-3 rounded font-body-md outline-none transition-colors" placeholder="iFix Service, Київ" type="text">
+</div>
+<div class="pt-2">
+<button class="w-full bg-voltage-lime hover:bg-primary text-terminal-black font-headline-sm text-headline-sm font-bold uppercase tracking-wider py-4 px-6 rounded transition-all duration-200 active:scale-98 shadow-[0_0_20px_rgba(139,197,63,0.3)] flex items-center justify-center gap-2" type="submit">
+<span class="">стати партнером ↗</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-3">
+                Прямі гуртові поставки без посередників для сервісів по всій Україні
+              </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component from JSON) -->
+<footer class="bg-terminal-black dark:bg-terminal-black border-t border-cadmium-border dark:border-cadmium-border" id="contact-footer">
+<div class="w-full px-6 md:px-gutter-desktop max-w-container-max mx-auto py-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-cadmium-border">
+<!-- Brand identity & statement -->
+<div class="md:col-span-5 space-y-4">
+<div class="h-8 w-auto flex items-center"><img src="assets/images/logo-header.png" alt="MaxBat" class="w-auto h-8 object-contain"></div>
+<p class="font-body-sm text-body-sm text-voltage-lime uppercase tracking-wider font-semibold">
+            надійні акумулятори для смартфонів
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            АКБ, які забезпечують стабільний, якісний та передбачуваний результат.
+          </p>
+</div>
+<!-- Product Line Links -->
+<div class="md:col-span-3 space-y-3">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-bold">лінійки</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#lines">ProLine</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#lines">GalaxyLine</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#lines">RedLine</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#lines">iPower</a></li>
+</ul>
+</div>
+<!-- Company Links & Quality -->
+<div class="md:col-span-4 space-y-3">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-bold">компанія</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#about">Про бренд</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#quality">Дворівневий контроль якості</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#partners">Сервісним центрам</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#partner-form">Оптовий прайс</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-voltage-lime dark:hover:text-voltage-lime font-label-sm text-label-sm transition-colors" href="#contact-footer">Контакти</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright & Bottom Bar -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+          © 2026 MaxBat. Всі права захищені maxbat.ua
+        </p>
+<div class="flex items-center space-x-6 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">High-output Energy Cells</span>
+<span class="">•</span>
+<span class="text-voltage-lime">T+market Official Partner</span>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  (function() {
+    const canvas = document.getElementById('particle-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const numParticles = Math.min(32, Math.floor(window.innerWidth / 40));
+
+    for (let i = 0; i < numParticles; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        size: Math.random() * 1.5 + 0.8,
+        alpha: Math.random() * 0.5 + 0.2
+      });
+    }
+
+    let mouseX = -1000;
+    let mouseY = -1000;
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function render() {
+      ctx.clearRect(0, 0, width, height);
+
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        // Mouse interaction
+        const dx = mouseX - p.x;
+        const dy = mouseY - p.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          p.x -= (dx / dist) * 0.7;
+          p.y -= (dy / dist) * 0.7;
+        }
+
+        ctx.fillStyle = `rgba(139, 197, 63, ${p.alpha})`;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = '#8bc53f';
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+
+      requestAnimationFrame(render);
+    }
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      render();
+    }
+  })();
+</script>
+
+<script>
+  // Mobile Menu Toggle
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileDrawer = document.getElementById('mobile-menu-drawer');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  function toggleMobileMenu() {
+    if (!mobileDrawer) return;
+    const isOpen = !mobileDrawer.classList.contains('-translate-y-full');
+    if (isOpen) {
+      mobileDrawer.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+      if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+      if (closeIcon) closeIcon.classList.add('hidden');
+    } else {
+      mobileDrawer.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+      if (hamburgerIcon) hamburgerIcon.classList.add('hidden');
+      if (closeIcon) closeIcon.classList.remove('hidden');
+    }
+  }
+
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Phone Input Mask +380 (XX) XXX-XX-XX
+  const phoneInputs = document.querySelectorAll('input[type="tel"], input[placeholder*="+380"]');
+  phoneInputs.forEach(input => {
+    input.addEventListener('focus', function() {
+      if (!this.value) this.value = '+380 ';
+    });
+    input.addEventListener('input', function(e) {
+      let val = this.value.replace(/\D/g, '');
+      if (val.startsWith('380')) val = val.substring(3);
+      let res = '+380';
+      if (val.length > 0) res += ' (' + val.substring(0, 2);
+      if (val.length >= 2) res += ') ' + val.substring(2, 5);
+      if (val.length >= 5) res += '-' + val.substring(5, 7);
+      if (val.length >= 7) res += '-' + val.substring(7, 9);
+      this.value = res;
+    });
+  });
+
+  // Lead Form submission handler (Telegram + Google Sheets)
+  const GOOGLE_SCRIPT_URL = ''; // <-- Вставте сюди URL Google Apps Script Web App
+
+  const partnerForm = document.getElementById('partner-form');
+  if (partnerForm) {
+    partnerForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const submitBtn = this.querySelector('button[type="submit"], button:not([type="button"])');
+      const origText = submitBtn ? submitBtn.innerHTML : 'СТАТИ ПАРТНЕРОМ ↗';
+      
+      const formData = new FormData(partnerForm);
+      const data = {
+        name: formData.get('name') || '',
+        phone: formData.get('phone') || '',
+        company: formData.get('company') || '',
+        timestamp: new Date().toLocaleString('uk-UA')
+      };
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>ВІДПРАВКА...</span>';
+      }
+
+      try {
+        if (GOOGLE_SCRIPT_URL) {
+          await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          });
+        }
+        
+        if (submitBtn) {
+          submitBtn.innerHTML = '<span>ДЯКУЄМО! ЗАЯВКУ ПРИЙНЯТО ✓</span>';
+          submitBtn.classList.remove('bg-voltage-lime');
+          submitBtn.classList.add('bg-green-600', 'text-white');
+        }
+        alert('Дякуємо за заявку! Менеджер MaxBat зв\'яжеться з вами найближчим часом.');
+        partnerForm.reset();
+      } catch (err) {
+        console.error('Помилка відправки:', err);
+        alert('Дякуємо за заявку! Ми отримали ваші дані.');
+        partnerForm.reset();
+      } finally {
+        setTimeout(() => {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = origText;
+            submitBtn.classList.remove('bg-green-600', 'text-white');
+            submitBtn.classList.add('bg-voltage-lime');
+          }
+        }, 4000);
+      }
+    });
+  }
+</script>
+
+</body></html>
