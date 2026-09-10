@@ -62,3 +62,16 @@
   - `favicon-32.png`, `apple-touch-icon.png` — іконки сайту.
   - `hero-arc.png`, `battery-*.webp` — додаткові графічні матеріали бренду.
 - `assets/svg/` — векторні логотипи та іконки (Instagram, Telegram, Viber, Bolt).
+
+---
+
+## 🚀 Деплой на бойовий сервер
+
+* **Сервер:** Hetzner Cloud (`2.28.121.179`), веб-сервер Caddy.
+* **Тимчасовий URL:** `https://2.28.121.179.sslip.io/`
+* **Каталог на сервері:** `/var/www/maxbat`
+* **Команда синхронізації (деплою):**
+  ```powershell
+  scp -r "C:\1 T+\Antigravity\MaxBat\сайт\maxbat.ua\*" maxbat:/var/www/maxbat/
+  ```
+
